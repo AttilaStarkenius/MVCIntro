@@ -21,9 +21,15 @@ namespace MVCIntro.Controllers
         {
             //Console.WriteLine("Någon klickade på Privacy-länken!");
             //return View(Index);
-            return View(nameof(Index));
+            Hej();
+            //return View(nameof(Index));
+            //return RedirectToAction(nameof(Index));
+            return View();
         }
 
-        public void
+        public void Hej()
+        {
+            Console.WriteLine("Hej från Home-controller!");
+        }
     }
 }
